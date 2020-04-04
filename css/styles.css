@@ -101,7 +101,8 @@ body {
   .site-navbar {
     margin-bottom: 0px;
     z-index: 1999;
-    position: absolute;
+    position: sticky;
+    background: #fff;
     top: 0;
     width: 100%;
     border-bottom: rgba(255, 255, 255, 0.7);
@@ -168,6 +169,7 @@ body {
     color: #000;
     display: inline-block;
     text-decoration: none !important;
+    cursor: pointer;
   }
 
   .site-navbar .site-navigation .site-menu a {
@@ -190,5 +192,74 @@ body {
     color: #a2c0be;
     text-decoration: none;
     background-color: transparent;
+  }
+
+  .site-blocks-cover,
+  .site-blocks-cover > .container > .row {
+    height: calc(100vh);
+    min-height: 600px;
+  }
+
+  .bg-light {
+    background: #fff;
+    /* background-color: rgb(204, 204, 204); */
+  }
+
+  .site-blocks-cover h1 {
+    font-size: 4rem;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left !important;
+    align-self: center !important;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 58.33333%;
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+
+  .intro-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .sub-text {
+    color: #999999;
+    font-size: 1.2rem;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+
+  .intro-image {
+    text-align: right !important;
+    align-self: flex-end !important;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 30.66667%;
+    flex: 0 0 30.66667%;
+    max-width: 30.66667%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .cover-img {
+    vertical-align: middle;
+    border-style: none;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .d-block {
+    /* display: block !important; */
   }
 }
