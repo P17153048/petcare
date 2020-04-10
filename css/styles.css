@@ -3,6 +3,10 @@
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #fff;
 }
@@ -222,6 +226,11 @@ body {
     /* height: calc(100vh); */
     height: auto;
     min-height: 600px;
+    padding-top: 5em;
+  }
+
+  .main-page {
+    padding-top: 0;
   }
 
   .bg-light {
