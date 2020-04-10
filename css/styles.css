@@ -65,6 +65,9 @@ body {
     text-align: center;
   }
 
+  .section {
+    border-top: 1px solid #eee;
+  }
   .contact-section {
     background: #ececec;
   }
@@ -216,7 +219,8 @@ body {
   }
 
   .site-blocks-cover {
-    height: calc(100vh);
+    /* height: calc(100vh); */
+    height: auto;
     min-height: 600px;
   }
 
