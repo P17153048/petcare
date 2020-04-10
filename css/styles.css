@@ -68,10 +68,15 @@ body {
     text-align: center;
   }
 
+  .contact-section {
+    background: #ececec;
+  }
+
   .col-xl-2,
   .col-md-10,
   .col-12,
-  .col-4 {
+  .col-4,
+  .col-6 {
     position: relative;
     /* width: 100%; */
     padding-right: 15px;
@@ -90,6 +95,13 @@ body {
     -ms-flex: 0 0 30.33%;
     flex: 0 0 30.33%;
     max-width: 33.33%;
+  }
+
+  .col-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 47.33%;
+    flex: 0 0 47.33%;
+    max-width: 47.33%;
   }
 
   .col-12 {
