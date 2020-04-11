@@ -76,6 +76,7 @@ body {
   }
   .contact-section {
     background: #ececec;
+    padding-bottom: 32px;
   }
 
   .col-xl-2,
@@ -224,6 +225,12 @@ body {
     background-color: transparent;
   }
 
+  .site-footer {
+    height: 60px;
+    background: #112233;
+    color: #fff;
+  }
+
   .site-blocks-cover {
     /* height: calc(100vh); */
     height: auto;
@@ -310,7 +317,7 @@ body {
   .section-heading {
     font-size: 2rem;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 600;
   }
 
   .lead {
