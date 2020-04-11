@@ -389,7 +389,8 @@ body {
   }
 
   .contact-address {
-    background: #9fa5aa;
+    background: #fff;
+    padding: 8px;
   }
 
   .text-box {
