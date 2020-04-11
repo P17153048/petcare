@@ -300,6 +300,13 @@ body {
     justify-content: center !important;
   }
 
+  .section-gallery {
+    background: #efe;
+  }
+
+  .section-about {
+    background: #bbb;
+  }
   .section-heading {
     font-size: 2rem;
     text-transform: uppercase;
