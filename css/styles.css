@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: smooth;
+  animation: fading 2s ease-in;
 }
 
 body {
@@ -70,7 +71,8 @@ body {
   }
 
   .section {
-    border-top: 1px solid #eee;
+    /* border-top: 1px solid #eee; */
+    border: none;
   }
   .contact-section {
     background: #ececec;
@@ -304,6 +306,24 @@ body {
     font-weight: 900;
   }
 
+  .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+
+  .about-img {
+    width: 100%;
+    border: 8px solid #cecece;
+    transition: transform 0.5s;
+  }
+
+  .about-img:hover {
+    border: 12px solid #cdcdcd;
+    transform: scale(1.01);
+    cursor: pointer;
+    padding: 0;
+  }
+
   .services {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
@@ -400,7 +420,10 @@ body {
     margin-bottom: 10px;
   }
 
-  @keyframes fading {
+  @keyframes html {
+    scroll-behavior: smooth;
+  }
+   {
     0% {
       opacity: 0;
     }
