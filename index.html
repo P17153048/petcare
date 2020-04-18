@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PetCare</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
@@ -36,7 +40,25 @@
                     <a class="nav-link" href="#contact-section">Contact</a>
                   </li>
                 </ul>
+                <ul class="site-menu collapsed-menu">
+                  <li>
+                    <a
+                      href="javascript:void(0);"
+                      class="icon nav-collapse-icon"
+                      onclick="toggleMenu()"
+                    >
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </li>
+                </ul>
               </nav>
+            </div>
+            <div id="nav-collapsed" class="nav-collapsed">
+              <a href="#home-section">Home</a>
+              <a href="#about-section">About</a>
+              <a href="#services-section">Services</a>
+              <a href="#gallery-section">Gallery</a>
+              <a href="#contact-section">Contact</a>
             </div>
           </div>
         </div>

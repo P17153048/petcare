@@ -103,7 +103,7 @@ body {
 }
 
 .nav-menu-container {
-  flex: 0 0 83.33%;
+  flex: auto;
   max-width: 83.33%;
 }
 
@@ -112,6 +112,24 @@ body {
 
   flex: 0 0 83.33333%;
   max-width: 83.33333%;
+}
+
+.nav-collapsed {
+  display: none;
+  width: 100%;
+}
+
+.nav-collapsed a {
+  color: #111;
+  background: #eee;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.nav-collapsed a:hover {
+  background: #cecece;
 }
 
 .sticky-wrapper .site-navbar .site-logo a {
@@ -157,6 +175,10 @@ body {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+}
+
+.nav-collapse-icon {
+  display: none;
 }
 
 a {
@@ -407,6 +429,10 @@ a {
 /* TABLET STYLES */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .main-menu {
+    display: none;
+  }
+
   .container {
     max-width: calc(90vw);
   }
@@ -488,6 +514,9 @@ a {
 
 @media screen and (min-width: 1024px) {
   /* applies to screens wider than 999px */
+  .collapsed-menu {
+    display: none;
+  }
 
   .container {
     max-width: calc(90vw);
@@ -556,6 +585,10 @@ a {
   .container {
     max-width: 90%;
     width: 90%;
+  }
+
+  .main-menu {
+    display: none;
   }
 
   .service-group {

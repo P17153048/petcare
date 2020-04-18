@@ -1,3 +1,9 @@
+function toggleMenu() {
+  let collapsableDiv = document.getElementById("nav-collapsed");
+  collapsableDiv.style.display =
+    collapsableDiv.style.display === "block" ? "none" : "block";
+}
+
 function displayGallery() {
   for (let i = 1; i <= 6; i++) {
     document.getElementById(
