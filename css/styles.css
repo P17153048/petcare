@@ -218,6 +218,7 @@ a {
 .intro-text {
   font-size: 16px;
   line-height: 1.5;
+  width: calc(60vw);
 }
 
 .sub-text {
@@ -405,9 +406,9 @@ a {
 }
 /* TABLET STYLES */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .container {
-    max-width: 720px;
+    max-width: calc(90vw);
   }
 
   .col-4 {
@@ -439,6 +440,10 @@ a {
 
   .main-page {
     padding-top: 5rem;
+  }
+
+  .site-heading {
+    font-size: 2rem;
   }
 
   .bg-light {
@@ -485,7 +490,7 @@ a {
   /* applies to screens wider than 999px */
 
   .container {
-    max-width: 1140px;
+    max-width: calc(90vw);
   }
 
   .col-4 {
@@ -501,7 +506,7 @@ a {
   .site-navbar .site-logo {
     font-weight: 500;
     position: relative;
-    left: 0;
+    left: 1rem;
     top: -5px;
   }
 
@@ -530,6 +535,10 @@ a {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 600;
+  }
+
+  .site-heading {
+    font-size: 4rem;
   }
 
   .lead {
@@ -593,6 +602,10 @@ a {
   }
 
   .site-blocks-cover h1 {
+    font-size: 2rem;
+  }
+
+  .site-heading {
     font-size: 2rem;
   }
 
