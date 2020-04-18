@@ -18,6 +18,15 @@ document.addEventListener(`DOMContentLoaded`, (event) => {
   displayGallery();
 });
 
+document
+  .getElementById(`nav-collapsed`)
+  .querySelectorAll(`a`)
+  .forEach((link) => {
+    link.addEventListener(`click`, (el) => {
+      toggleMenu();
+    });
+  });
+
 document.getElementById("contact-form").addEventListener("submit", () => {
   if (!validateForm()) {
     alert("Invalid phone number");
