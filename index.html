@@ -46,12 +46,12 @@
           <div class="row">
             <div class="intro">
               <div class="intro-text">
-                <h1>
+                <h2 class="site-heading">
                   We care for
                   <span class="d-md-block">
                     your dog
                   </span>
-                </h1>
+                </h2>
                 <p class="sub-text">
                   We always try to provide your dog the best
                   <span class="d-block">
@@ -255,19 +255,19 @@
 
           <div class="row contact-form-sm">
             <div class="col-6 contact-form">
-              <form action="#" class="p-5 contact-form">
+              <form action="#" class="p-5 contact-form" id="contact-form">
                 <h2 class="heading">Contact Form</h2>
                 <div class="row">
                   <div class="col-6 p-0">
                     <div class="p-15">
                       <label for="fname">First Name</label>
-                      <input type="text" id="fname" class="text-box" />
+                      <input type="text" id="fname" class="text-box" required />
                     </div>
                   </div>
                   <div class="col-6 p-0">
                     <div class="p-15">
                       <label for="lname">Last Name</label>
-                      <input type="text" id="lname" class="text-box" />
+                      <input type="text" id="lname" class="text-box" required />
                     </div>
                   </div>
                 </div>
@@ -275,13 +275,18 @@
                   <div class="col-6 p-0">
                     <div class="p-15">
                       <label for="email">Email</label>
-                      <input type="email" id="email" class="text-box" />
+                      <input
+                        type="email"
+                        id="email"
+                        class="text-box"
+                        required
+                      />
                     </div>
                   </div>
                   <div class="col-6 p-0">
                     <div class="p-15">
                       <label for="phone">Phone</label>
-                      <input type="text" id="phone" class="text-box" />
+                      <input type="text" id="phone" class="text-box" required />
                     </div>
                   </div>
                 </div>
@@ -292,6 +297,7 @@
                       type="text"
                       id="subject"
                       class="text-box text-subject"
+                      required
                     />
                   </div>
                 </div>
@@ -305,6 +311,7 @@
                       rows="7"
                       class="text-box text-message"
                       placeholder="Write your notes or questions here..."
+                      required
                     ></textarea>
                   </div>
                 </div>
@@ -324,13 +331,10 @@
             <div class="col-6 contact-address">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23733766.638291612!2d-5.308731048066192!3d43.435782927853815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876edea39a1dd5d%3A0xa8d141f1af34f57!2sPet%20Care!5e0!3m2!1sen!2sin!4v1586631723748!5m2!1sen!2sin"
-                width="100%"
-                height="100%"
-                frameborder="0"
-                style="border: 0;"
                 allowfullscreen=""
                 aria-hidden="false"
                 tabindex="0"
+                class="iframe"
               ></iframe>
             </div>
           </div>
