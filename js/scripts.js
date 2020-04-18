@@ -1,3 +1,9 @@
+function toggleMenu() {
+  let collapsableDiv = document.getElementById("nav-collapsed");
+  collapsableDiv.style.display =
+    collapsableDiv.style.display === "block" ? "none" : "block";
+}
+
 function displayGallery() {
   for (let i = 1; i <= 6; i++) {
     document.getElementById(
@@ -11,6 +17,15 @@ function displayGallery() {
 document.addEventListener(`DOMContentLoaded`, (event) => {
   displayGallery();
 });
+
+document
+  .getElementById(`nav-collapsed`)
+  .querySelectorAll(`a`)
+  .forEach((link) => {
+    link.addEventListener(`click`, (el) => {
+      toggleMenu();
+    });
+  });
 
 document.getElementById("contact-form").addEventListener("submit", () => {
   if (!validateForm()) {
